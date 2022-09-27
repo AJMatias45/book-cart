@@ -15,7 +15,7 @@
     <h1>Enter your complete name</h1>
 
     <!-- 1. point to the appropriate form handler with the proper HTTP request method -->
-    <form action="/??????" method="?????">
+    <form action="/" method="GET">
     <!-- 2. add the cross site request forgery blade tag here -->
 
     <div class="row">
