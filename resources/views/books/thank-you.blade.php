@@ -16,7 +16,7 @@
 
     <ul class="list-unstyled">
     <!-- 1. Display all the reserved books -->
-    
+    {{ $reserved_books }}
     </ul>
 
 </div>
