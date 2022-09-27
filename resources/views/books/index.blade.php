@@ -17,7 +17,7 @@
     <!-- 1. point to the appropriate form handler with the proper HTTP request method -->
     <form action="/select-books" method="POST">
     <!-- 2. add the cross site request forgery blade tag here -->
-
+    @csrf
     <div class="row">
         <div class="col col-md-6">
             <label>First Name:</label>
