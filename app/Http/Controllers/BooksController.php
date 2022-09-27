@@ -47,7 +47,7 @@ class BooksController extends Controller
         // .... add your code here
 
         // 2. Read this documentation for redirection (https://laravel.com/docs/9.x/redirects), and redirect to the page or endpoint where the books are listed
-        return redirect('/??????????');
+        return redirect('select-books');
     }
 
     public function listBooks(Request $request)
@@ -77,8 +77,8 @@ class BooksController extends Controller
     {
         $books = static::BOOKS;
 
-        $first_name = $request->session()->_________________________;
-        $last_name = _______________________________________________;
+        $first_name = $request->session()->get('first_name');
+        $last_name = $request->session()->get('last_name');
 
         $book_codes = $request->session()->get('books');
         $reserved_books = [];

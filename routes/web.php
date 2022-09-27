@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 // 1. You will need to import the exact controller namespace path
-use _________________________?
+use app\Http\Controllers\BooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +16,10 @@ use _________________________?
 |
 */
 
-Route::get('/', [BooksController::class, 'index']);
+Route::get('/index', [BooksController::class, 'index']);
 
 // 2. Specify the method name which handles complete name registration
-Route::post('/register-user', [BooksController::class, '?????']);
+Route::post('/register-user', [BooksController::class, '']);
 
 // 3. Specify the method name that lists the books available
 Route::get('/select-books', [BooksController::class, 'listBooks']);
